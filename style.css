@@ -1,0 +1,51 @@
+@font-face{
+    font-family: jjk;
+    src: url(jjk.ttf)
+}
+
+.img-box *{
+    background: var(--img) center;
+    padding: 0px 10px 30px 20px;
+    width: 200px;
+    height: 501px;
+    object-fit: cover;
+    border-radius: 50px;
+    background-size: cover;
+    flex-basis: 300px;
+    position: relative;
+    transition: 60ms all ease;
+    filter: grayscale(100%) opacity(150%);
+    transition: .75s;
+    cursor: pointer;
+}
+
+.head{
+    margin-top: 0;
+    font-family: jjk;
+    font-size: 30px;
+    color: black;
+    -webkit-text-stroke: .2px white;
+}
+
+body{
+    background-color: rgb(73, 73, 73);
+    background-size: contain;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-box *:nth-child(even){
+    transform: translateY(30px);
+}
+
+.img-box *:hover{
+    transition: 800ms;
+    flex-basis: 800px;
+    transform: scale(1.1);
+    filter: grayscale(0%) opacity(150%);
+}
